@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Услуги — VISIONARY</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="app.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-dot"></div>
+        VISIONARY
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="creators.html">Креаторы</a></li>
+        <li><a href="services.html" class="active">Услуги</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="team.html">О Команде</a></li>
+        <li><a href="services.html" class="nav-cta">Заказать</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему"></button>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Главная</a>
+    <a href="creators.html">Креаторы</a>
+    <a href="services.html">Услуги</a>
+    <a href="reviews.html">Отзывы</a>
+    <a href="team.html">О Команде</a>
+  </div>
+
+  <div class="page">
+    <section class="hero hero-short">
+      <div class="hero-grain"></div>
+      <div class="hero-content">
+        <div class="section-label fade-up">Что мы предлагаем</div>
+        <h1 class="display fade-up fade-up-d1 services-hero-title">
+          НАШИ<br>
+          <span class="accent">УСЛУГИ</span>
+        </h1>
+        <p class="fade-up fade-up-d2 services-hero-desc">
+          От быстрого эдита для соцсетей до полного свадебного кино — у нас есть решение для любой задачи.
+        </p>
+      </div>
+    </section>
+
+    <div class="services-banner">
+      <div class="services-banner-inner">
+        <p class="services-banner-text">Бесплатная консультация по любому проекту — пишите нам!</p>
+        <a href="#" class="btn services-banner-btn">Написать сейчас</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="expand-card" id="s1">
+        <div class="expand-header" onclick="toggleCard('s1')">
+          <div class="service-header">
+            <div class="service-icon-box"></div>
+            <div class="service-info">
+              <h2 class="service-name">Эдиты для соцсетей</h2>
+              <p class="service-subtitle">Reels · TikTok · YouTube Shorts · Stories</p>
+            </div>
+            <div class="service-price">
+              <div class="price-badge">от 3 000 ₽</div>
+              <div class="price-label">за 1 ролик</div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="s1-body">
+          <div class="expand-body-inner">
+            <div class="service-detail-grid">
+              <div>
+                <p class="service-description">Динамичные эдиты под музыку для любых соцсетей. Переходы, эффекты, синхронизация с битом — всё это наш конёк. Срок: 1–3 дня.</p>
+                <div class="price-grid">
+                  <div class="price-card price-card-light">
+                    <div class="price-amount">3 000 ₽</div>
+                    <div class="price-type">Базовый · до 60 сек</div>
+                    <ul class="price-features">
+                      <li>✓ Монтаж под музыку</li>
+                      <li>✓ 1 правка</li>
+                      <li>✓ Срок 2–3 дня</li>
+                    </ul>
+                  </div>
+                  <div class="price-card price-card-accent">
+                    <div class="price-amount-dark">7 000 ₽</div>
+                    <div class="price-type-dark">Про · до 3 мин</div>
+                    <ul class="price-features-dark">
+                      <li>✓ Эффекты + переходы</li>
+                      <li>✓ 3 правки</li>
+                      <li>✓ Срок 1–2 дня</li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-sm">Заказать эдит →</a>
+              </div>
+              <div>
+                <p class="video-label-small">Пример работы</p>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="https://via.placeholder.com/640x360?text=Edit+Reels" controls preload="metadata">
+                    <source src="image/videos/ВидеоФлоуФуриса.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>Пример эдита для Reels · 60 сек</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expand-card" id="s2">
+        <div class="expand-header" onclick="toggleCard('s2')">
+          <div class="service-header">
+            <div class="service-icon-box"></div>
+            <div class="service-info">
+              <h2 class="service-name">Свадебная съёмка и монтаж</h2>
+              <p class="service-subtitle">Полный день · Монтаж · Выдача готового фильма</p>
+            </div>
+            <div class="service-price">
+              <div class="price-badge">от 35 000 ₽</div>
+              <div class="price-label">под ключ</div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="s2-body">
+          <div class="expand-body-inner">
+            <div class="service-detail-grid">
+              <div>
+                <p class="service-description">Ваша свадьба заслуживает быть запечатлённой на века. Мы снимаем весь день — от утренних сборов до последнего танца. Результат: полноценный свадебный фильм + короткий тизер для соцсетей.</p>
+                <div class="price-grid-three">
+                  <div class="price-card-small">
+                    <div class="price-amount">35 000</div>
+                    <div class="price-type">Стандарт<br>1 камера</div>
+                  </div>
+                  <div class="price-card-small price-card-small-accent">
+                    <div class="price-amount-dark">55 000</div>
+                    <div class="price-type-dark">Стандарт+<br>2 камеры</div>
+                  </div>
+                  <div class="price-card-small">
+                    <div class="price-amount">90 000</div>
+                    <div class="price-type">Премиум<br>+ Дрон</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-sm">Забронировать дату →</a>
+              </div>
+              <div>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="https://via.placeholder.com/640x360?text=Свадебный+тизер" controls preload="metadata">
+                    <source src="image/videos/Русская свадьба, промо ролик свадьбы очень красиво.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>Свадебный тизер — Мария & Дмитрий</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expand-card" id="s3">
+        <div class="expand-header" onclick="toggleCard('s3')">
+          <div class="service-header">
+            <div class="service-icon-box"></div>
+            <div class="service-info">
+              <h2 class="service-name">Музыкальный клип</h2>
+              <p class="service-subtitle">Съёмка + монтаж + колоризация</p>
+            </div>
+            <div class="service-price">
+              <div class="price-badge">от 25 000 ₽</div>
+              <div class="price-label">под ключ</div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="s3-body">
+          <div class="expand-body-inner">
+            <div class="service-detail-grid">
+              <div>
+                <p class="service-description">Музыкальные клипы с концепцией, постановкой и кинематографической картинкой. Работаем с артистами любого уровня — от независимых музыкантов до лейблов. Пред-продакшн включён.</p>
+                <div class="price-grid">
+                  <div class="price-card price-card-light">
+                    <div class="price-amount">25 000 ₽</div>
+                    <div class="price-type">Базовый</div>
+                    <ul class="price-features">
+                      <li>✓ 1 локация</li>
+                      <li>✓ 1 съёмочный день</li>
+                      <li>✓ Монтаж + цвет</li>
+                    </ul>
+                  </div>
+                  <div class="price-card price-card-accent">
+                    <div class="price-amount-dark">60 000 ₽</div>
+                    <div class="price-type-dark">Кино</div>
+                    <ul class="price-features-dark">
+                      <li>✓ До 3 локаций</li>
+                      <li>✓ 2 дня съёмок</li>
+                      <li>✓ VFX + моушн</li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-sm">Обсудить клип →</a>
+              </div>
+              <div>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="https://via.placeholder.com/640x360?text=Музыкальный+клип" controls preload="metadata">
+                    <source src="image/videos/музыкальныйКлип.MP4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>Клип — пример работы</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expand-card" id="s4">
+        <div class="expand-header" onclick="toggleCard('s4')">
+          <div class="service-header">
+            <div class="service-icon-box"></div>
+            <div class="service-info">
+              <h2 class="service-name">Корпоративное видео</h2>
+              <p class="service-subtitle">Интро · Презентации · Конференции · Реклама</p>
+            </div>
+            <div class="service-price">
+              <div class="price-badge">от 15 000 ₽</div>
+              <div class="price-label">от 1 мин</div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="s4-body">
+          <div class="expand-body-inner">
+            <div class="service-detail-grid">
+              <div>
+                <p class="service-description">Профессиональное корпоративное видео для презентаций компании, рекламных роликов, обучающих материалов и событийной съёмки. Строгий стиль, точный месседж.</p>
+                <div class="corp-prices">
+                  <div class="corp-price-item">
+                    <div>
+                      <p class="corp-price-title">Рекламный ролик</p>
+                      <p class="corp-price-desc">До 60 секунд, монтаж + цвет</p>
+                    </div>
+                    <div class="price-badge-small">15 000 ₽</div>
+                  </div>
+                  <div class="corp-price-item">
+                    <div>
+                      <p class="corp-price-title">Презентация компании</p>
+                      <p class="corp-price-desc">2–5 минут, съёмка + монтаж</p>
+                    </div>
+                    <div class="price-badge-small">35 000 ₽</div>
+                  </div>
+                  <div class="corp-price-item corp-price-item-accent">
+                    <div>
+                      <p class="corp-price-title-dark">Корпоратив под ключ</p>
+                      <p class="corp-price-desc-dark">Весь день, несколько форматов</p>
+                    </div>
+                    <div class="price-badge-dark">60 000 ₽</div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-sm">Запросить КП →</a>
+              </div>
+              <div>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="https://youtu.be/2pQZLTSUlB0?si=Xzvv-YL8fjlXgE_b" controls preload="metadata">
+                    <source src="image/videos/Танцевальный конкурс на новогоднем корпоративе. Ведущ.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>Корпоративный ролик — пример</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expand-card" id="s5">
+        <div class="expand-header" onclick="toggleCard('s5')">
+          <div class="service-header">
+            <div class="service-icon-box"></div>
+            <div class="service-info">
+              <h2 class="service-name">Монтаж вашего материала</h2>
+              <p class="service-subtitle">Приносите видео — мы делаем шедевр</p>
+            </div>
+            <div class="service-price">
+              <div class="price-badge">от 5 000 ₽</div>
+              <div class="price-label">за проект</div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="s5-body">
+          <div class="expand-body-inner">
+            <div class="service-detail-grid">
+              <div>
+                <p class="service-description">У вас есть материал, но нет времени или навыков для монтажа? Загружайте файлы — мы смонтируем, сделаем цветокоррекцию, добавим музыку и эффекты. Результат за 1–5 дней.</p>
+                <div class="montazh-prices">
+                  <div class="montazh-price-card">
+                    <div class="price-amount">5 000 ₽</div>
+                    <p class="montazh-desc">До 10 мин материала</p>
+                  </div>
+                  <div class="montazh-price-card">
+                    <div class="price-amount">12 000 ₽</div>
+                    <p class="montazh-desc">До 60 мин материала</p>
+                  </div>
+                  <div class="montazh-price-card montazh-price-card-accent">
+                    <div class="price-amount-dark">по запросу</div>
+                    <p class="montazh-desc-dark">Большой проект</p>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-sm">Отправить материал →</a>
+              </div>
+              <div>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="https://via.placeholder.com/640x360?text=До+После+монтажа" controls preload="metadata">
+                    <source src="image/videos/на услуги.MP4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>До / После монтажа</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expand-card" id="s6">
+        <div class="expand-header" onclick="toggleCard('s6')">
+          <div class="service-header">
+            <div class="service-icon-box"></div>
+            <div class="service-info">
+              <h2 class="service-name">Документальные промо видео</h2>
+              <p class="service-subtitle">Репортажи · Портреты · Мини-доки</p>
+            </div>
+            <div class="service-price">
+              <div class="price-badge">от 50 000 ₽</div>
+              <div class="price-label">под ключ</div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="s6-body">
+          <div class="expand-body-inner">
+            <div class="service-detail-grid">
+              <div>
+                <p class="service-description">Создаём документальные фильмы о людях, компаниях и событиях. Полный цикл: концепция, сценарий, съёмка, монтаж. Ваша история, рассказанная честно и красиво.</p>
+                <div class="doc-features">
+                  <p class="doc-features-title">Что входит</p>
+                  <ul class="doc-features-list">
+                    <li>✓ Разработка концепции</li>
+                    <li>✓ Съёмка (несколько дней)</li>
+                    <li>✓ Интервью и нарратив</li>
+                    <li>✓ Монтаж + цветокоррекция</li>
+                    <li>✓ Звуковой дизайн</li>
+                  </ul>
+                </div>  
+                <a href="#" class="btn btn-primary btn-sm">Обсудить проект →</a>
+              </div>
+              <div>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="https://via.placeholder.com/640x360?text=Документальный+фильм" controls preload="metadata">
+                    <source src="image/videos/ВаняЛучший.MOV" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>Мини-документальный — «Город»</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>VISIONARY<span class="accent">.</span></h3>
+          <p>Видео-продакшен студия. Монтаж, съёмка, эдиты — всё под ключ.</p>
+          <div class="socials">
+            <a href="#" class="social-link">Vk</a>
+            <a href="#" class="social-link">Tg</a>
+            <a href="#" class="social-link">IG</a>
+            <a href="#" class="social-link">YT</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Страницы</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="creators.html">Креаторы</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="team.html">О команде</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Услуги</h4>
+          <ul>
+            <li><a href="#">Видеомонтаж</a></li>
+            <li><a href="#">Свадебная съёмка</a></li>
+            <li><a href="#">Эдиты</a></li>
+            <li><a href="#">Клипы</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="#">@visionary_prod</a></li>
+            <li><a href="#">+7 (999) 123-45-67</a></li>
+            <li><a href="#">info@visionary.ru</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

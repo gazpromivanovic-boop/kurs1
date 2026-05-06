@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Креаторы — VISIONARY</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="app.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-dot"></div>
+        VISIONARY
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="creators.html" class="active">Креаторы</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="team.html">О Команде</a></li>
+        <li><a href="services.html" class="nav-cta">Заказать</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему"></button>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Главная</a>
+    <a href="creators.html">Креаторы</a>
+    <a href="services.html">Услуги</a>
+    <a href="reviews.html">Отзывы</a>
+    <a href="team.html">О Команде</a>
+  </div>
+
+  <div class="page">
+    <section class="hero hero-short">
+      <div class="hero-grain"></div>
+      <div class="hero-content">
+        <div class="section-label fade-up">Наши таланты</div>
+        <h1 class="display fade-up fade-up-d1 creators-hero-title">
+          ЗНАКОМЬТЕСЬ<br>
+          С <span class="accent">КРЕАТОРАМИ</span>
+        </h1>
+        <p class="fade-up fade-up-d2 creators-hero-desc">
+          Каждый из наших креаторов — это уникальный стиль и многолетний опыт. Выберите того, чьи работы вас вдохновляют.
+        </p>
+      </div>
+    </section>
+
+    <div class="section">
+      <div class="expand-card" id="c1">
+        <div class="expand-header" onclick="toggleCard('c1')">
+          <div class="creator-header">
+            <div class="avatar">
+              <div class="avatar-emoji"><img src="image/avatar/13.jpg" alt="" style="height: auto; width: 200px;"></div>
+            </div>
+            <div class="creator-info">
+              <div class="creator-name-row">
+                <h2 class="creator-name">@xaned</h2>
+                <span class="badge badge-accent">Топ</span>
+              </div>
+              <p class="creator-role">Главный монтажёр · Видеоарт · Свадьбы</p>
+              <div class="creator-stats">
+                <div class="creator-stat">
+                  <div class="stat-num-small">87</div>
+                  <div class="stat-label-small">ПРОЕКТОВ</div>
+                </div>
+                <div class="creator-stat">
+                  <div class="stat-num-small">5 лет</div>
+                  <div class="stat-label-small">ОПЫТА</div>
+                </div>
+                <div class="creator-stat">
+                  <div class="stars">★★★★★</div>
+                  <div class="stat-label-small">РЕЙТИНГ</div>
+                </div>
+              </div>
+            </div>
+            <div class="creator-tags">
+              <span class="badge badge-muted">Свадьбы</span>
+              <span class="badge badge-muted">Монтаж</span>
+              <span class="badge badge-muted">Colour grading</span>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="c1-body">
+          <div class="expand-body-inner">
+            <div class="creator-detail-grid">
+              <div>
+                <h3 class="creator-detail-title">О КРЕАТОРЕ</h3>
+                <p class="creator-bio">
+                  Александр — это тот, кто видит историю в каждом кадре. Специализируется на свадебном кино и художественном монтаже. Его работы отличает особая атмосфера и внимание к деталям.
+                </p>
+                <div class="creator-skills">
+                  <p class="skills-label">СПЕЦИАЛИЗАЦИЯ</p>
+                  <div class="skills-list">
+                    <span class="badge badge-muted">Adobe Premiere</span>
+                    <span class="badge badge-muted">DaVinci Resolve</span>
+                    <span class="badge badge-muted">After Effects</span>
+                  </div>
+                </div>
+                <h3 class="reviews-title">ОТЗЫВЫ</h3>
+                <div class="review-card-mini review-card-accent">
+                  <div class="stars stars-small">★★★★★</div>
+                  <p class="review-text-mini">"Александр сделал нашу свадьбу вечной. Каждый раз пересматриваем со слезами на глазах."</p>
+                  <p class="review-author-mini">— Мария & Дмитрий, свадебный клип</p>
+                </div>
+                <div class="review-card-mini review-card-accent">
+                  <div class="stars stars-small">★★★★★</div>
+                  <p class="review-text-mini">"Лучший монтажёр, с которым я работала. Схватывает идею с полуслова."</p>
+                  <p class="review-author-mini">— @music_artist_kira, клип</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="creator-detail-title">ЛУЧШАЯ РАБОТА</h3>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="" controls preload="metadata">
+                      <source src="image/videos/КлипНаОтзывыКвест.MP4" type="video/mp4">
+                      Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>Казань · 2024 · 6:36 мин.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expand-card" id="c2">
+        <div class="expand-header" onclick="toggleCard('c2')">
+          <div class="creator-header">
+            <div class="avatar avatar-orange">
+              <div class="avatar-emoji"><img src="image/avatar/2026-01-22_21.10.26.png" alt="" style="height: auto; width: 200px;"></div>
+            </div>
+            <div class="creator-info">
+              <div class="creator-name-row">
+                <h2 class="creator-name">@sneimi</h2>
+                <span class="badge badge-muted">Эдиты</span>
+              </div>
+              <p class="creator-role">Эдит-мастер · Reels · Клипы</p>
+              <div class="creator-stats">
+                <div class="creator-stat">
+                  <div class="stat-num-small">143</div>
+                  <div class="stat-label-small">ПРОЕКТОВ</div>
+                </div>
+                <div class="creator-stat">
+                  <div class="stat-num-small">3 года</div>
+                  <div class="stat-label-small">ОПЫТА</div>
+                </div>
+                <div class="creator-stat">
+                  <div class="stars">★★★★★</div>
+                  <div class="stat-label-small">РЕЙТИНГ</div>
+                </div>
+              </div>
+            </div>
+            <div class="creator-tags">
+              <span class="badge badge-muted">Reels</span>
+              <span class="badge badge-muted">Клипы</span>
+              <span class="badge badge-muted">Transitions</span>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="c2-body">
+          <div class="expand-body-inner">
+            <div class="creator-detail-grid">
+              <div>
+                <h3 class="creator-detail-title">О КРЕАТОРЕ</h3>
+                <p class="creator-bio">
+                  Нова — королева эдитов. Её ролики взрывают соцсети благодаря идеальному чувству ритма и нестандартным переходам. Специализируется на быстром монтаже и музыкальных клипах.
+                </p>
+                <div class="creator-skills">
+                  <p class="skills-label">ИНСТРУМЕНТЫ</p>
+                  <div class="skills-list">
+                    <span class="badge badge-muted">CapCut Pro</span>
+                    <span class="badge badge-muted">Premiere Pro</span>
+                    <span class="badge badge-muted">Final Cut</span>
+                  </div>
+                </div>
+                <h3 class="reviews-title">ОТЗЫВЫ</h3>
+                <div class="review-card-mini review-card-accent2">
+                  <div class="stars stars-small">★★★★★</div>
+                  <p class="review-text-mini">"Нова сделала эдит за ночь — я был в шоке от качества. 100% рекомендую!"</p>
+                  <p class="review-author-mini">— @dj_maxvibe, клип</p>
+                </div>
+                <div class="review-card-mini review-card-accent2">
+                  <div class="stars stars-small">★★★★☆</div>
+                  <p class="review-text-mini">"Просто огонь. Рилс набрал 500к просмотров после её монтажа."</p>
+                  <p class="review-author-mini">— @blogger_sofi, Reels</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="creator-detail-title">ЛУЧШАЯ РАБОТА</h3>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="image/videos/марин_chf3_prob4.mp4" controls preload="metadata">
+                    <source src="image/videos/марин_chf3_prob4.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>Москва · 2024 · 0:17 мин.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expand-card" id="c3">
+        <div class="expand-header" onclick="toggleCard('c3')">
+          <div class="creator-header">
+            <div class="avatar avatar-dark">
+              <div class="avatar-emoji"><img src="image/avatar/DSC01696.jpg" alt="" style="height: auto; width: 200px;"></div>
+            </div>
+            <div class="creator-info">
+              <div class="creator-name-row">
+                <h2 class="creator-name">@Uncomprehend1ng</h2>
+                <span class="badge badge-muted">Оператор</span>
+              </div>
+              <p class="creator-role">Оператор · Документалистика · Репортаж</p>
+              <div class="creator-stats">
+                <div class="creator-stat">
+                  <div class="stat-num-small">62</div>
+                  <div class="stat-label-small">ПРОЕКТОВ</div>
+                </div>
+                <div class="creator-stat">
+                  <div class="stat-num-small">4 года</div>
+                  <div class="stat-label-small">ОПЫТА</div>
+                </div>
+                <div class="creator-stat">
+                  <div class="stars">★★★★★</div>
+                  <div class="stat-label-small">РЕЙТИНГ</div>
+                </div>
+              </div>
+            </div>
+            <div class="creator-tags">
+              <span class="badge badge-muted">Sony A7</span>
+              <span class="badge badge-muted">Документалки</span>
+              <span class="badge badge-muted">Репортаж</span>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="c3-body">
+          <div class="expand-body-inner">
+            <div class="creator-detail-grid">
+              <div>
+                <h3 class="creator-detail-title">О КРЕАТОРЕ</h3>
+                <p class="creator-bio">
+                  Роман — оператор с художественным взглядом. Его кадры — это поэзия в движении. Работает с документальными проектами, корпоративным видео и репортажной съёмкой.
+                </p>
+                <div class="creator-skills">
+                  <p class="skills-label">ОБОРУДОВАНИЕ</p>
+                  <div class="skills-list">
+                    <span class="badge badge-muted">Sony A7 IV</span>
+                    <span class="badge badge-muted">DJI Ronin</span>
+                    <span class="badge badge-muted">Aputure 300D</span>
+                  </div>
+                </div>
+                <h3 class="reviews-title">ОТЗЫВЫ</h3>
+                <div class="review-card-mini review-card-accent">
+                  <div class="stars stars-small">★★★★★</div>
+                  <p class="review-text-mini">"Рома снял наш корпоратив так, что выглядит как голливудский фильм."</p>
+                  <p class="review-author-mini">— ООО «Техника Будущего», корпоратив</p>
+                </div>
+                <div class="review-card-mini review-card-accent">
+                  <div class="stars stars-small">★★★★★</div>
+                  <p class="review-text-mini">"Уникальное видение. Каждый кадр — произведение искусства."</p>
+                  <p class="review-author-mini">— Документальный проект «Город»</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="creator-detail-title">ЛУЧШАЯ РАБОТА</h3>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="https://via.placeholder.com/640x360?text=Промо+видео+для+квеста" controls preload="metadata">
+                    <source src="image/videos/ВаняГовКреаторы.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>Москва · 2024 · 2:41 мин.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expand-card" id="c4">
+        <div class="expand-header" onclick="toggleCard('c4')">
+          <div class="creator-header">
+            <div class="avatar avatar-gold">
+              <div class="avatar-emoji"><img src="image/avatar/DSC02348.JPG" alt="" style="height: auto; width:   100px;"></div>
+            </div>  
+            <div class="creator-info">
+              <div class="creator-name-row">
+                <h2 class="creator-name">@GOJO</h2>
+                <span class="badge badge-muted">Колорист</span>
+              </div>
+              <p class="creator-role">Колорист · Моушн-дизайн · Графика</p>
+              <div class="creator-stats">
+                <div class="creator-stat">
+                  <div class="stat-num-small">54</div>
+                  <div class="stat-label-small">ПРОЕКТОВ</div>
+                </div>
+                <div class="creator-stat">
+                  <div class="stat-num-small">2 года</div>
+                  <div class="stat-label-small">ОПЫТА</div>
+                </div>
+                <div class="creator-stat">
+                  <div class="stars">★★★★★</div>
+                  <div class="stat-label-small">РЕЙТИНГ</div>
+                </div>
+              </div>
+            </div>
+            <div class="creator-tags">
+              <span class="badge badge-muted">DaVinci</span>
+              <span class="badge badge-muted">Motion</span>
+              <span class="badge badge-muted">Лютинг</span>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-body" id="c4-body">
+          <div class="expand-body-inner">
+            <div class="creator-detail-grid">
+              <div>
+                <h3 class="creator-detail-title">О КРЕАТОРЕ</h3>
+                <p class="creator-bio">
+                  Ника — волшебница цвета. Её колорирование превращает обычную съёмку в кинематографический шедевр. Специализируется на создании уникальных LUT и моушн-графике.
+                </p>
+                <div class="creator-skills">
+                  <p class="skills-label">ИНСТРУМЕНТЫ</p>
+                  <div class="skills-list">
+                    <span class="badge badge-muted">DaVinci Resolve</span>
+                    <span class="badge badge-muted">After Effects</span>
+                    <span class="badge badge-muted">Photoshop</span>
+                  </div>
+                </div>
+                <h3 class="reviews-title">ОТЗЫВЫ</h3>
+                <div class="review-card-mini review-card-accent">
+                  <div class="stars stars-small">★★★★★</div>
+                  <p class="review-text-mini">"После работы Ники наш клип выглядит как из Голливуда. Цвета просто нереальные!"</p>
+                  <p class="review-author-mini">— @rap_artist_pro, клип</p>
+                </div>
+                <div class="review-card-mini review-card-accent">
+                  <div class="stars stars-small">★★★★★</div>
+                  <p class="review-text-mini">"Моушн-графика от Ники — это отдельный вид искусства. Всем советую!"</p>
+                  <p class="review-author-mini">— TechStart Agency, реклама</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="creator-detail-title">ЛУЧШАЯ РАБОТА</h3>
+                <div class="video-wrapper-bottom">
+                  <video class="custom-video" poster="image/videos/The MOST EPIC MHA. Edit Of ALL Time ⧸ Where Have You Been ⧸ GOJO神.mp4" controls preload="metadata">
+                    <source src="image/videos/The MOST EPIC MHA. Edit Of ALL Time ⧸ Where Have You Been ⧸ GOJO神.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                  </video>
+                </div>
+                <div class="video-meta-bottom">
+                  <p>Москва · 2024 · 3:00 мин.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="creators-cta">
+      <div class="section-label section-label-center">Готовы к работе</div>
+      <h2 class="display creators-cta-title">ВЫБЕРИ СВОЕГО КРЕАТОРА</h2>
+      <p class="creators-cta-text">Напишите нам — подберём лучшего специалиста под ваш проект</p>
+      <a href="services.html" class="btn btn-primary">Оставить заявку →</a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>VISIONARY<span class="accent">.</span></h3>
+          <p>Видео-продакшен студия. Монтаж, съёмка, эдиты — всё под ключ.</p>
+          <div class="socials">
+            <a href="#" class="social-link">Vk</a>
+            <a href="#" class="social-link">Tg</a>
+            <a href="#" class="social-link">IG</a>
+            <a href="#" class="social-link">YT</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Страницы</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="creators.html">Креаторы</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="team.html">О команде</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Услуги</h4>
+          <ul>
+            <li><a href="services.html">Видеомонтаж</a></li>
+            <li><a href="services.html">Свадебная съёмка</a></li>
+            <li><a href="services.html">Эдиты</a></li>
+            <li><a href="services.html">Клипы</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="#">@visionary_prod</a></li>
+            <li><a href="#">+7 (999) 123-45-67</a></li>
+            <li><a href="#">info@visionary.ru</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
